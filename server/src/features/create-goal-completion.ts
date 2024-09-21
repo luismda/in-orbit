@@ -50,7 +50,11 @@ export async function createGoalCompletion({
     throw new Error('Goal already completed this week.')
   }
 
-  const insertResult = await db.insert(goalCompletions).values({ goalId })
+  const insertResult = await db
+    .insert(goalCompletions)
+    .values({ goalId })
+    .returning()
+
   const goalCompletion = insertResult[0]
 
   return {

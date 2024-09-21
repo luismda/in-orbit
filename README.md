@@ -1,6 +1,8 @@
 # in.orbit
 
-> A web app for managing weekly personal goals developed using React.js and Node.js. 🔥
+A web app for managing weekly personal goals developed using React.js, TailwindCSS, Node.js, Fastify, PostgreSQL and Drizzle ORM. 🔥
+
+> ✅ All features have E2E tests.
 
 The Figma layout can be accessed [here](https://www.figma.com/community/file/1415093862269754302/nlw-pocket-js-in-orbit).
 
@@ -35,6 +37,9 @@ pnpm seed
 
 # Start project 🚀
 pnpm dev
+
+# Run all e2e tests 🔥
+pnpm test:e2e
 
 ```
 
