@@ -2,13 +2,13 @@
 
 A web app for managing weekly personal goals developed using React.js, TailwindCSS, Node.js, Fastify, PostgreSQL and Drizzle ORM. 🔥
 
-> ✅ All features have E2E tests.
-
 The Figma layout can be accessed [here](https://www.figma.com/community/file/1415093862269754302/nlw-pocket-js-in-orbit).
+
+> ✅ All features have E2E tests building with Vitest and Playwright.
 
 ## Running
 
-> This project uses [biome](https://github.com/biomejs/biome) for linting. So, you will probably want to install the biome extension in your VSCode.
+This project uses [biome](https://github.com/biomejs/biome) for linting. So, you will probably want to install the biome extension in your VSCode.
 
 ```sh
 
@@ -19,7 +19,7 @@ git clone https://github.com/luismda/in-orbit.git
 
 ### Server
 
-> Create a `.env` file inside the `server` directory following the `.env.example`. Then run these commands below. 👇
+Create a `.env` file inside the `server` directory following the `.env.example`. Then run these commands below. 👇
 
 ```sh
 
@@ -45,7 +45,7 @@ pnpm test:e2e
 
 ### Web
 
-> Create a `.env.local` file inside the `web` directory following the `.env.example`. Then run these commands below. 👇
+Create a `.env.local` file inside the `web` directory following the `.env.example`. Then run these commands below. 👇
 
 ```sh
 
@@ -54,5 +54,11 @@ pnpm i
 
 # Start project 🚀
 pnpm dev
+
+# Start project using MSW (with mocks)
+pnpm dev:test
+
+# Run all e2e tests with Playwright browser 🔥
+pnpm test:e2e:ui
 
 ```
